@@ -18,7 +18,7 @@ export const Signin = () => {
   const handleSignIn = async () => {
     setLoading(true);
     try {
-      const request = await axios.post("http://localhost:3000/api/v1/user/signin", {
+      const request = await axios.post("https://campuspay-svuh.onrender.com/api/v1/user/signin", {
         username,
         password
       });

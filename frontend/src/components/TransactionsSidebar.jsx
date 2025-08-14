@@ -9,7 +9,7 @@ export const TransactionsSidebar = () => {
         const fetchTransactions = async () => {
             const token = localStorage.getItem("token");
             try {
-                const response = await axios.get("http://localhost:3000/api/v1/account/history", {
+                const response = await axios.get("https://campuspay-svuh.onrender.com/api/v1/account/history", {
                     headers: {
                         authorization: 'Bearer ' + token
                     }

@@ -21,7 +21,7 @@ export const SendMoney = () => {
     useEffect(() => {
         const fetchBalance = async () => {
             try {
-                const { data } = await axios.get("http://localhost:3000/api/v1/account/balance", {
+                const { data } = await axios.get("https://campuspay-svuh.onrender.com/api/v1/account/balance", {
                     params: { userId },
                     headers: { authorization: `Bearer ${token}` }
                 });
@@ -49,7 +49,7 @@ export const SendMoney = () => {
         setTransferLoading(true);
         try {
             const response = await axios.post(
-                "http://localhost:3000/api/v1/account/transfer",
+                "https://campuspay-svuh.onrender.com/api/v1/account/transfer",
                 { to: id, amount },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
