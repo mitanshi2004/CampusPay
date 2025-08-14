@@ -1,0 +1,48 @@
+/* Signup container background same as home */
+.signup-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d18;
+  position: relative;
+}
+
+/* Home button color same as home’s primary button */
+.home-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 12px;
+  background-color: #7a5cff; /* Same as home button */
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.home-btn:hover {
+  background-color: #9b6bff; /* Hover shade from home */
+}
+.bottom-warning {
+  font-size: 0.875rem; /* same as text-sm */
+  color: #d1d5db; /* light gray to match dark bg (#6b7280 would be darker) */
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.bottom-warning a {
+  background: linear-gradient(90deg, #7a5cff, #9b6bff); /* same as loader/button */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.bottom-warning a:hover {
+  opacity: 0.8;
+}
