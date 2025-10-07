@@ -28,7 +28,4 @@ It allows students to store money digitally and use it across various **campus s
 | **Hosting** | Render / Vercel / Netlify |
 | **Version Control** | Git & GitHub |
 
----
-
-## 🧩 Folder Structure
 
